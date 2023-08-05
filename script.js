@@ -1,4 +1,4 @@
-const output = document.getElementById("output");
+const output = document.getElementById("text-output");
 const input = document.getElementById("input");
 const submit = document.getElementById("submit");
 
@@ -37,6 +37,9 @@ let i = 0;
 const interval = setInterval(() => {
   output.textContent += bootSequence[i] + "\n";
 
+  // scroll to the bottom
+  output.scrollTop = output.scrollHeight;
+
   if (++i >= bootSequence.length) {
     clearInterval(interval);
   }
@@ -50,5 +53,7 @@ submit.addEventListener("click", () => {
     output.textContent += `Invalid command "${command}". Please enter a valid command.\n`;
   }
   input.value = "";
-});
 
+  // scroll to the bottom
+  output.scrollTop = output.scrollHeight;
+});

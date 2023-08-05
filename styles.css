@@ -1,8 +1,24 @@
-#output {
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 800px;
+  width: 800px;
+  background-image: url('monitor_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#text-output {
   font-family: monospace;
   white-space: pre;
   color: lime;
-  background: black;
   padding: 10px;
+  height: 600px;  /* Adjust as needed */
+  width: 600px;   /* Adjust as needed */
+  top: 100px;     /* Adjust as needed */
+  left: 100px;    /* Adjust as needed */
+  position: relative;
+  background: transparent;
 }
-
