@@ -10,18 +10,43 @@
   z-index: -1;
 }
 
+#terminal {
+  position: relative;
+  top: 114px; /* Adjust as needed */
+  left: 150px; /* Adjust as needed */
+  width: 695px; /* Adjust as needed */
+  height: 440px; /* Adjust as needed */
+}
+
 #text-output {
   font-family: monospace;
   white-space: pre;
   color: lime;
   padding: 10px;
-  height: 400px;  /* Adjust as needed */
-  width: 695px;   /* Adjust as needed */
-  top: 114px;     /* Adjust as needed */
-  left: 150px;    /* Adjust as needed */
-  position: relative;
+  height: calc(100% - 40px); /* Adjust as needed, 40px is for input field and margins */
+  width: 100%;
+  position: absolute;
   overflow: auto;
   background: transparent;
+}
+
+#input {
+  position: absolute;
+  width: 80%;  /* Adjust this value to change the width of the input field */
+  color: lime;
+  background-color: black;
+  bottom: 0;  /* Adjust as needed */
+  left: 0;   /* Adjust as needed */
+  border: 1px solid lime; /* this changes the border color */
+}
+
+#submit {
+  position: absolute;
+  color: lime;
+  background-color: black;
+  bottom: 0;  /* Adjust as needed */
+  left: 85%;  /* Position to the right of the input field */
+  border: 1px solid lime; /* this changes the border color */
 }
 
 #text-output::-webkit-scrollbar {
