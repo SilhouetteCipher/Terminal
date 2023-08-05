@@ -1,0 +1,8 @@
+#output {
+  font-family: monospace;
+  white-space: pre;
+  color: lime;
+  background: black;
+  padding: 10px;
+}
+
