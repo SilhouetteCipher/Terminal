@@ -2,8 +2,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 800px;
-  width: 800px;
+  height: 1024px;
+  width: 1024px;
   background-image: url('monitor_image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,10 +15,33 @@
   white-space: pre;
   color: lime;
   padding: 10px;
-  height: 600px;  /* Adjust as needed */
-  width: 600px;   /* Adjust as needed */
-  top: 100px;     /* Adjust as needed */
-  left: 100px;    /* Adjust as needed */
+  height: 400px;  /* Adjust as needed */
+  width: 695px;   /* Adjust as needed */
+  top: 114px;     /* Adjust as needed */
+  left: 150px;    /* Adjust as needed */
   position: relative;
+  overflow: auto;
   background: transparent;
+}
+
+#text-output::-webkit-scrollbar {
+  width: 2px;
+}
+
+#text-output::-webkit-scrollbar-track {
+  background: #333;
+}
+
+#text-output::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(
+    to bottom,
+    lime 0,
+    lime 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+#text-output::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
