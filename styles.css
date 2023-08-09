@@ -2,9 +2,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 1024px;
-  width: 1024px;
-  background-image: url('monitor_image.jpg');
+  height: 1300px;
+  width: 1022px;
+  background-image: url('Larger.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -12,10 +12,10 @@
 
 #terminal {
   position: relative;
-  top: 114px; /* Adjust as needed */
-  left: 150px; /* Adjust as needed */
-  width: 695px; /* Adjust as needed */
-  height: 440px; /* Adjust as needed */
+  top: 168px; /* Adjust as needed */
+  left: 221px; /* Adjust as needed */
+  width: 855px; /* Adjust as needed */
+  height: 587px; /* Adjust as needed */
 }
 
 #text-output {
