@@ -2,9 +2,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 1028px;
-  width: 1300px;
-  background-image: url('Larger.jpg');
+  height: 1423px;
+  width: 1800px;
+  background-image: url('Larger2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -12,10 +12,10 @@
 
 #terminal {
   position: relative;
-  top: 168px; /* Adjust as needed */
-  left: 221px; /* Adjust as needed */
-  width: 855px; /* Adjust as needed */
-  height: 580px; /* Adjust as needed */
+  top: 233px; /* Adjust as needed */
+  left: 307px; /* Adjust as needed */
+  width: 1184px; /* Adjust as needed */
+  height: 812px; /* Adjust as needed */
 }
 
 #text-output {
@@ -35,7 +35,7 @@
   width: 80%;  /* Adjust this value to change the width of the input field */
   color: lime;
   background-color: black;
-  bottom: 0;  /* Adjust as needed */
+  bottom: 10px;  /* Adjust as needed */
   left: 0;   /* Adjust as needed */
   border: 1px solid lime; /* this changes the border color */
 }
@@ -44,7 +44,7 @@
   position: absolute;
   color: lime;
   background-color: black;
-  bottom: 0;  /* Adjust as needed */
+  bottom: 10px;  /* Adjust as needed */
   left: 85%;  /* Position to the right of the input field */
   border: 1px solid lime; /* this changes the border color */
 }

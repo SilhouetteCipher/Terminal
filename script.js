@@ -1,6 +1,7 @@
 const output = document.getElementById("text-output");
 const input = document.getElementById("input");
 const submit = document.getElementById("submit");
+const textReadoutSpeed = 100
 
 const bootSequence = [
   "DATA INTERFACE ACTIVE...",
@@ -43,7 +44,7 @@ const interval = setInterval(() => {
   if (++i >= bootSequence.length) {
     clearInterval(interval);
   }
-}, 1000);
+}, textReadoutSpeed); //this is text update speed
 
 submit.addEventListener("click", () => {
   const command = input.value.trim();
