@@ -2,8 +2,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 1300px;
-  width: 1022px;
+  height: 1028px;
+  width: 1300px;
   background-image: url('Larger.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
   top: 168px; /* Adjust as needed */
   left: 221px; /* Adjust as needed */
   width: 855px; /* Adjust as needed */
-  height: 587px; /* Adjust as needed */
+  height: 580px; /* Adjust as needed */
 }
 
 #text-output {
