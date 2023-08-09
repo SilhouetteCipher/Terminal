@@ -1,14 +1,25 @@
+:root {
+  --fade-start-horizontal: 5%;   /* Adjust for horizontal start fade */
+  --fade-end-horizontal: 95%;    /* Adjust for horizontal end fade */
+  --fade-start-vertical: 5%;     /* Adjust for vertical start fade */
+  --fade-end-vertical: 95%;      /* Adjust for vertical end fade */
+}
+
 #background-image {
   position: absolute;
   top: 0;
   left: 0;
   height: 1423px;
   width: 1800px;
-  background-image: url('Larger2.jpg');
-  background-size: cover;
+  background: 
+    linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) var(--fade-start-horizontal), rgba(0,0,0,0) var(--fade-end-horizontal), rgba(0,0,0,1) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) var(--fade-start-vertical), rgba(0,0,0,0) var(--fade-end-vertical), rgba(0,0,0,1) 100%),
+    url('Larger2.jpg');
+  background-size: 100% 100%, 100% 100%, cover;
   background-repeat: no-repeat;
   z-index: -1;
 }
+
 
 #terminal {
   position: relative;
@@ -34,6 +45,7 @@
   position: absolute;
   width: 80%;  /* Adjust this value to change the width of the input field */
   color: lime;
+  height:20px;
   background-color: black;
   bottom: 10px;  /* Adjust as needed */
   left: 0;   /* Adjust as needed */
@@ -45,7 +57,8 @@
   color: lime;
   background-color: black;
   bottom: 10px;  /* Adjust as needed */
-  left: 85%;  /* Position to the right of the input field */
+  height: 25px;
+  left: 81%;  /* Position to the right of the input field */
   border: 1px solid lime; /* this changes the border color */
 }
 
